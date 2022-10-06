@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>Guessing Game</h1>
+    <div id="gamArea">
+      <div id="flex">
+        <p>choose a level please</p>
+      </div>
+      <div id="levels">
+        <input
+          type="radio"
+          id="easylvl"
+          name="lvl"
+          value="easylvl"
+          onchange="easylvl();"
+        />
+        <label for="easylvl">Easy</label>
+
+        <input
+          type="radio"
+          id="mlvl"
+          name="lvl"
+          value="mlvl"
+          onchange="mlvl();"
+        />
+        <label for="mlvl">Medium</label>
+
+        <input
+          type="radio"
+          id="hardlvl"
+          name="lvl"
+          value="hardlvl"
+          onchange="hardlvl();"
+        />
+        <label for="hardlvl">Hard</label>
+      </div>
+      <div id="levelP">
+        <p id="instructions"></p>
+        <p id="chance"></p>
+      </div>
+      <div id="inputField">
+        <input type="text" id="input" />
+        <button>Submit</button>
+      </div>
+    </div>
+
+    <p id="results"></p>
+    <button class="button" id="restart">Restart Game</button>
+
+    <script src="script.js"></script>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
